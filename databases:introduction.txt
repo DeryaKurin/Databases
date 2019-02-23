@@ -1,0 +1,89 @@
+
+1-
+
+1. "A Clockwork Orange" - string
+2. 42 - integer
+3. 09/02/1945 - date
+4. 98.7 - float
+5. $15.99 - money
+
+
+2- When we want to hold data that stays also when our program is not running, and want to search for a specific information, change or delete them. Databases are not for humans to read them. It is a kind of collection that our computers can understand and manipulate more easily.
+
+Text files are understandable to humans so they can read them. Our computers would not manipulate a text file unless we write a specific function for them to execute it.
+
+So we use text files when we want to make a change ourselves.
+
+3- SQL is declarative rather than procedural language. So we don't describe each step to be taken by the computer, instead we write a result or goal and the computer executes it. 
+
+SELECT * FROM users
+WHERE userId = 2;
+
+There is no search method described here.
+
+4- Databases consist of rows and columns where each value is liked to another and thus could be tracked and obtained.
+
+5- 
+1. Table is the place where all the information is stored.
+2. Row is a line where different type of information about one particular item is stored.
+3. Column is where we can add some information of a particular category about the items in our table.
+4. Value is the input data that we fill the columns and rows with.
+
+6- 
+1. Integer
+2. String
+3. Date
+
+7-  
+
+1. 
+ SELECT date, amount
+ FROM payments;
+
+ Select all the dates and their corresponding amounts from payments table. 
+
+2.
+ SELECT amount
+ FROM payments
+ WHERE amount > 500;
+
+ Select all the amounts that are bigger than 500 from the payments table.
+
+3.
+ SELECT *
+ FROM payments
+ WHERE payee = 'Mega Foods';
+
+ Select all the information about the payee called Mega Foods from payments table.
+
+4. Users table => 
+
+ 1. The email and sign-up date for the user named DeAndre Data.
+ 
+ SELECT email, signupdate
+ FROM users
+ WHERE username = 'DeAndre Data';
+
+ 2. The user ID for the user with email 'aleesia.algorithm@uw.edu'.
+
+ SELECT userid
+ FROM users
+ WHERE email = 'aleesia.algorithm@uw.edu';
+
+ 3. All the columns for the user ID equal to 4.
+  
+ SELECT * 
+ FROM users
+ WHERE userid = 4;
+
+
+ 
+
+
+
+
+
+
+
+
+
