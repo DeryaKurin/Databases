@@ -56,21 +56,25 @@ There is no search method described here.
 
  Select all the information about the payee called Mega Foods from payments table.
 
-4. Users table => 
+8. Users table => 
 
  1. The email and sign-up date for the user named DeAndre Data.
  
  SELECT email, signupdate
  FROM users
  WHERE username = 'DeAndre Data';
-
-This query will return the corresponding email and sign update of the user DeAndre Data from the users table.
+email                  signup
+datad@comcast.net      2008-01-20
 
  2. The user ID for the user with email 'aleesia.algorithm@uw.edu'.
 
  SELECT userid
  FROM users
  WHERE email = 'aleesia.algorithm@uw.edu';
+
+userid
+1
+
 
 This query will return the corresponding userId of the user with the email 'aleesia.algorithm@uw.edu' from the users table.
 
@@ -83,6 +87,8 @@ This query will return the corresponding userId of the user with the email 'alee
 
 This query will return all the corresponding information of the user with the userid 4 from the users table.
 
+userid	 name	        email	                signup
+4	Brandy Boolean	bboolean@nasa.gov	1999-10-15
 
  
 
